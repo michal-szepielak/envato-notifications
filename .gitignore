@@ -1,0 +1,4 @@
+.idea/
+.DS_Store
+src/css/style.css
+libs/less/mixins.css

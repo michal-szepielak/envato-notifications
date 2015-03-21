@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notifications</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form id="form" class="main-wrapper">
+        <div id="messageBox" class="notification-box">box test</div>
+        <label>Username: <input type="text" id="username" value="" placeholder="Username"></label>
+
+        <label>Fetch data interval:</label>
+        <label class="inline"><input type="radio" name="interval" value="1h"><span><!--fake radio--></span> 1 hour</label>
+        <label class="inline"><input type="radio" name="interval" value="15min" checked="checked"><span><!--fake radio--></span> 15 mins</label>
+        <label class="inline"><input type="radio" name="interval" value="asap"><span><!--fake radio--></span> as soon as possible</label>
+
+        <label>Notification type:</label>
+        <label class="inline"><input type="radio" name="type" value="sale" checked="checked"><span><!--fake radio--></span> Sale notification</label>
+        <label class="inline"><input type="radio" name="type" value="balance"><span><!--fake radio--></span> Balance changed</label>
+
+        <label class="hidden">API Key: <input type="text" id="apikey" value="" placeholder="API Key"></label>
+
+        <div class="center">
+            <button type="button" id="start">Start receiving notifications!</button>
+        </div>
+        <div class="center hidden">
+            <button type="button" id="stop" class="red">Stop!</button>
+        </div>
+    </form>
+    <footer class="main-wrapper">Created by <a href="http://codecanyon.net/user/LogicartDevelopment">LogicartDevelopment</a></footer>
+
+    <script src="js/Notifier.js"></script>
+    <script src="js/Notifier.EnvatoAPI.js"></script>
+    <script src="js/Notifier.ViewController.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
